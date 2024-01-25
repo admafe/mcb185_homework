@@ -6,11 +6,13 @@ multi-line
 comment
 """
 #Test Math 
-print(1.5e-2)
-print(7%2)
-print(5//2)
 import math
+print(1.5e-2)
+print(5%2)
+print(5//2)
+print(2**3)
 print(math.sqrt(2))
+print(pow(2,3))
 
 #Variables
 a=3
