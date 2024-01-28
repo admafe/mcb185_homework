@@ -1,4 +1,4 @@
-#21quadratic.py by Adele Ferrer
+# 21quadratic.py by Adele Ferrer
 
 import math
 
