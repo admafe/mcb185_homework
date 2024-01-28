@@ -1,12 +1,6 @@
 # 23hydropathy.py by Adele Ferrer
 # Co-authors: Aman Panigrahi
 
-#chain the ifs
-#need to write out statements for each amino acid
-#want is it A, no then try next letter until through all aas
-#need a statemtn at end to return error message if input is not an AA letter code 
-# B, J, O, U, X, Z
-
 def hydrophobic(aa):
 	if aa == 'A': return -1.8
 	elif aa == 'C': return +2.5

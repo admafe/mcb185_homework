@@ -1,5 +1,5 @@
 # 25entropy.py by Adele Ferrer
-# David 
+# Co-authors: David 
 
 #frequencies of diff nucleotides in 
 # -sum of probabilities of each of the nucleotide frequencies multiplied but log of each prob
@@ -16,8 +16,8 @@ def entropy(A, C, G, T):
 	pC = C / total
 	pG = G / total 
 	pT = T / total
-	return -((pA * math.log2(pA)) + (pC * math.log2(pC)) +
-			 (pG * math.log2(pG)) + (pT * math.log2(pT)))
+	return -(pA * math.log2(pA) + pC * math.log2(pC) + 
+			 pG * math.log2(pG) + pT * math.log2(pT))
 
 print(entropy(1,1,1,1))
 print(entropy(4,0,5,7))
