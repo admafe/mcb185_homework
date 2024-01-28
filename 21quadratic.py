@@ -1,5 +1,21 @@
-#make sure to tell the program how to handle diff number of arguments
-# (return x1, x2), (return x,x), etc 
+#21quadratic.py by Adele Ferrer
 
-def quadratic(a,b,c)
-	if (ax^2 + bx + c)
+import math
+
+def quadratic(a, b, c):
+	if (b**2 - 4*a*c) < 0: 
+		return "No real solutions"
+	elif (b**2 - 4*a*c) == 0: 
+		return -b / (2*a)
+	else: 
+		x1 = (-b + math.sqrt(b**2 - 4*a*c)) / 2*a
+		x2 = (-b - math.sqrt(b**2 - 4*a*c)) / 2*a
+		return x1, x2
+		
+print(quadratic(3, 2, 1))
+print(quadratic(6, 17, 12))
+print(quadratic(1, -7, -3))
+print(quadratic(1, 5, 6))
+print(quadratic(-1, 4, -4))
+
+# x= (-b +/- sqrt(b**2 - 4ac)/2a
