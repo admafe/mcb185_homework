@@ -12,6 +12,7 @@ import math
 
 def entropy(A, C, G, T):
 	total = A + C + G + T
+	if total == 0: return 0
 	pA = A / total
 	pC = C / total
 	pG = G / total 

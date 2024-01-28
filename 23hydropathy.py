@@ -2,7 +2,7 @@
 # Co-authors: Aman Panigrahi
 
 def hydrophobic(aa):
-	if aa == 'A': return -1.8
+	if   aa == 'A': return -1.8
 	elif aa == 'C': return +2.5
 	elif aa == 'D': return -3.5
 	elif aa == 'E': return -3.5
