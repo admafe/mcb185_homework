@@ -18,6 +18,7 @@ import math
 #print(math.pi)
 #print(math.inf)
 #print(pow(2,3))
+print(math.log2(8))
 
 #Variables
 
@@ -109,5 +110,4 @@ if s2 < s3: print('B < a')
 
 a = 15
 def odd(a):
-	if 
 	if not a/2: print('odd')
