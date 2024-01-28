@@ -11,14 +11,13 @@
 import math
 
 def entropy(A, C, G, T):
-	nt = A + C + G + T
-	pA = A / nt
-	pC = C / nt
-	pG = G / nt 
-	pT = T / nt 
-	return -(pA * math.log2(pA) + pC * math.log2(pC) +
-			 pG * math.log2(pG) + pT*math.log2(pT))
+	total = A + C + G + T
+	pA = A / total
+	pC = C / total
+	pG = G / total 
+	pT = T / total
+	return -((pA * math.log2(pA)) + (pC * math.log2(pC)) +
+			 (pG * math.log2(pG)) + (pT * math.log2(pT)))
 
 print(entropy(1,1,1,1))
 print(entropy(4,0,5,7))
-	
