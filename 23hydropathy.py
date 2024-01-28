@@ -6,8 +6,6 @@
 #want is it A, no then try next letter until through all aas
 #need a statemtn at end to return error message if input is not an AA letter code 
 # B, J, O, U, X, Z
-import math
-import sys
 
 def hydrophobic(aa):
 	if aa == 'A': return -1.8
