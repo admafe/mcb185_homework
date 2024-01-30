@@ -3,9 +3,9 @@
 import math
 
 def quadratic(a, b, c):
-	if (b**2 - 4*a*c) < 0: 
+	if(b**2 - 4*a*c) < 0: 
 		return "No real solutions"
-	elif (b**2 - 4*a*c) == 0: 
+	elif(b**2 - 4*a*c) == 0: 
 		return -b / (2*a)
 	else: 
 		x1 = (-b + math.sqrt(b**2 - 4*a*c)) / 2*a

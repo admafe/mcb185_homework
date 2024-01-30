@@ -1,25 +1,26 @@
 # 25entropy.py by Adele Ferrer 
 
 # Take in counts, find freq of each, then do summation
-# Needs to account for and ignore 0 inputs (What if there is no T?)
+# Needs to account for and ignore 0 counts
+# (What if there is no T?)
 
-#		H = -(pA * math.log2(pA) + pC * math.log2(pC) + 
-#		      pG * math.log2(pG) + pT * math.log2(pT))
+#		H = -(PA * math.log2(PA) + PC * math.log2(PC) + 
+#		      PG * math.log2(PG) + PT * math.log2(PT))
 
 import math
 import sys
 
 def entropy(A, C, G, T):
 	total = A + C + G + T
-	pA = A / total
-	pC = C / total
-	pG = G / total 
-	pT = T / total
+	PA = A / total
+	PC = C / total
+	PG = G / total 
+	PT = T / total
 	H = 0
-	if A > 0: H = H + pA * math.log2(pA)
-	if C > 0: H = H + pC * math.log2(pC)
-	if G > 0: H = H + pG * math.log2(pG)
-	if T > 0: H = H + pT * math.log2(pT)
+	if A > 0: H = H + PA * math.log2(PA)
+	if C > 0: H = H + PC * math.log2(PC)
+	if G > 0: H = H + PG * math.log2(PG)
+	if T > 0: H = H + PT * math.log2(PT)
 	return -H
 
 print(entropy(1, 1, 1, 1))
