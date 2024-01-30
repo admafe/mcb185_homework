@@ -3,8 +3,10 @@
 import math
 
 def quadratic(a, b, c):
+#	assert(dis >= 0)
 	if(b**2 - 4*a*c) < 0: 
 		return "No real solutions"
+#		try again and let python return the complex numbers
 	elif(b**2 - 4*a*c) == 0: 
 		return -b / (2*a)
 	else: 

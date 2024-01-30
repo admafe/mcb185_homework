@@ -1,7 +1,7 @@
 # 23hydropathy.py by Adele Ferrer
 # Co-authors: Aman Panigrahi
 
-def hydrophobic(aa):
+def hydrophobicity(aa):
 	if   aa == 'A': return +1.8
 	elif aa == 'C': return +2.5
 	elif aa == 'D': return -3.5
@@ -22,10 +22,13 @@ def hydrophobic(aa):
 	elif aa == 'V': return +4.2
 	elif aa == 'W': return -0.9
 	elif aa == 'Y': return -1.3
-	else: return 'Not an Amino Acid'
+	else: return 'Not an Amino Acid' # fix this, needs to be a number so we can do math 
 	
-print(hydrophobic('T'))
-print(hydrophobic('B'))
-print(hydrophobic('C'))
-print(hydrophobic('Y'))
-print(hydrophobic('A'))
+print(hydrophobicity('T'))
+print(hydrophobicity('B'))
+print(hydrophobicity('C'))
+print(hydrophobicity('Y'))
+print(hydrophobicity('A'))
+
+# aa's can be uppercase
+# nucleotides need to be lowercase
