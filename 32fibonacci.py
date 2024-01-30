@@ -4,10 +4,11 @@
 
 def fibonacci(n):
 	n = 0
-	for i in range(0,21):
-		n1 = n + i
-		n2 = n1 + n
-	return (n2)
+	for i in range(10):
+		n = i + 1
+		n = n + i
+		for 
+	return (n)
 	
 print(fibonacci(1))
 print(fibonacci(9))
@@ -20,3 +21,5 @@ print(fibonacci(9))
 
 #Need a variable to hold first argument, then loop through that variable
 # Check notes for more 
+
+#need sequence for this? (seq = )
