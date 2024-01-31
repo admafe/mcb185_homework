@@ -3,6 +3,9 @@ MCB 185 Notes
 
 generally alphabetize. example: alphabetize nucleotides
 
+nucleotides should be lowercase, generally all variable lowercase
+amino acids can be uppercase letters
+
 use ifs when events are independent 
 use elifs when events are reliant on prior if statements
 

@@ -30,5 +30,3 @@ print(hydrophobicity('C'))
 print(hydrophobicity('Y'))
 print(hydrophobicity('A'))
 
-# aa's can be uppercase
-# nucleotides need to be lowercase

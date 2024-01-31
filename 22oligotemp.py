@@ -10,5 +10,4 @@ print(oligotemp(1, 2, 2, 1))
 print(oligotemp(7, 4, 3, 2))
 print(oligotemp(18, 22, 27, 32))
 
-#rewrite with lowercase letters, code wants lowercase letters 
-#all nucleotides and all that stuff should be lowercase 
+
