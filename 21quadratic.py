@@ -1,17 +1,15 @@
 # 21quadratic.py by Adele Ferrer
 
-import math
-
 def quadratic(a, b, c):
 	dis = b**2 - 4*a*c
-	if(b**2 - 4*a*c) < 0: 
-		return "No real solutions"
+#	if(b**2 - 4*a*c) < 0: 
+#		return "No real solutions"
 #		try again and let python return the complex numbers
 	if dis == 0: 
 		return -b / (2*a)
 	else: 
-		x1 = (-b + math.sqrt(dis)) / 2*a
-		x2 = (-b - math.sqrt(dis)) / 2*a
+		x1 = (-b + (dis)**0.5) / 2*a
+		x2 = (-b - (dis)**0.5) / 2*a
 		return x1, x2
 		
 print(quadratic(3, 2, 1))
