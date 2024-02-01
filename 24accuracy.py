@@ -5,7 +5,7 @@ def accuracy(tp, fp, tn, fn):
 	recall = tp / (tp + fn)
 	f1 = 2 * ((precision * recall) / (precision + recall))
 	accuracy = (tp + tn) / (tp + fn + tn + fp)
-	print ('F1 Score:', f1, 'Accuracy:', accuracy )
+	print('F1 Score:', f1, 'Accuracy:', accuracy )
 
 print(accuracy(8, 2, 9, 3))
 print(accuracy(80, 10, 90, 20))

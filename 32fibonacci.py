@@ -28,12 +28,13 @@ print(fibonacci(9))
 #need sequence for this? (seq = )
 
 def fibonacci(n):
-	a = 0
-	b = 1
+	n1 = 0
+	n2 = 1
 	for i in range(n):
-		print(a)
-		temp = a
-		a = b
-		b = temp + b
+		print(n1)
+		temp = n1
+		n1 = n2
+		n2 = temp + n2
 
 print(fibonacci(9))
+print(fibonacci(5))
