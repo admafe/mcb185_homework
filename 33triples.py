@@ -5,3 +5,5 @@
 
 # if c == c //1
 # is integer 
+
+#Needs loop inside a loop; nested loop 

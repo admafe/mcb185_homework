@@ -13,6 +13,13 @@ Write problems/ issues out first, then do the work
 Weed out problems/ potential errors (like when you want positives or things)
 then you can solve 
 
+**test functions with small check-able values, then expand range once it works**
+
+**use """ not ''' to comment stuff out**
+
+**write a line, then run it; test and retest each line before adding new things**
+**Debug each line before writing new lines**
+
 # While loop
 while < condition is True/False >
 	output/ function here

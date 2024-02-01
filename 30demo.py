@@ -51,3 +51,14 @@ for i in range(0, limit):
 	for j in range(i +1, limit):
 		print(i+1, j+1)
 # half scoring matrix, starts at i +1, goes to next loop, so no a*a
+
+#Practice Problems 
+# 1 is a for loop
+# 2 is also a for loop
+# 	need if argument for factorial of 0 which = 1
+# 3 uses the factorial from 2
+# 4 is a boolean?, function, 
+# 5 test to divide i by half of numbs below it 
+# what does it mean to be prime? define. 
+#	(Ex: 45/ 1,2,3,..22)
+
