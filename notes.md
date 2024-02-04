@@ -24,6 +24,9 @@ then you can solve
 while < condition is True/False >
 	output/ function here
 	
+# Style Checker
+python3 ~/Code/MCB185/stylint.py <yourfile.py>
+	
 # Questions
 - complex numbers in python? how? # don't need to account for them, we don't use em ever
 - what output wanted for hydropathy non aa values? zero?, do we want calculations for 
