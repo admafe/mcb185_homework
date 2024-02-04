@@ -8,8 +8,9 @@ def nilakantha(n):
 		sign = sign * -1
 #		if i % 2 == 0: return(+denom)
 #		else:        return((-1)*denom)
-	pi = x + (sign * (4/denom))
-	return (pi)
+		estimate = (sign * (4/denom))
+#	pi = x + estimate
+	return (estimate)
 		
 print(nilakantha(5))
 print(nilakantha(21))
