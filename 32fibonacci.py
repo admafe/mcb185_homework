@@ -37,4 +37,5 @@ def fibonacci(n):
 		n2 = temp + n2
 
 print(fibonacci(9))
-print(fibonacci(5))
+#print(fibonacci(5))
+#print(fibonacci(20))
