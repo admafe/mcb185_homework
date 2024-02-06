@@ -26,6 +26,6 @@ def nilakantha(n):
 		x = estimate + x
 	return (x)
 	
-def(simulataneous)
+#def(simulataneous)
 
 print(pi_estimate(100), nilakantha(100))
