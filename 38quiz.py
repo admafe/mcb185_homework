@@ -9,10 +9,23 @@ def pi_estimate(n):
 		y = (sign * (1 / n))
 		x = x + y
 		sign = sign * -1
-		pi = 4 * (x)
+		pi = 4 * (x)	
 	return(pi)
 		
-print(pi_estimate(16))
-print(pi_estimate(100))
+#print(pi_estimate(16))
+#print(pi_estimate(100))
 
 #Task
+def nilakantha(n):
+	x = 3
+	sign = 1
+	for i in range(2, n, 3):
+		denom = (i) * (i + 1) * (i + 2)
+		estimate = (sign * (4/denom))
+		sign = sign * -1
+		x = estimate + x
+	return (x)
+	
+def(simulataneous)
+
+print(pi_estimate(100), nilakantha(100))
