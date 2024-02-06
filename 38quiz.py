@@ -15,7 +15,7 @@ def pi_estimate(n):
 #print(pi_estimate(16))
 #print(pi_estimate(100))
 
-#Task
+#Task 2
 def nilakantha(n):
 	x = 3
 	sign = 1
