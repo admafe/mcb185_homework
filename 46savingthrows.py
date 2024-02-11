@@ -41,20 +41,17 @@ trials = 10000
 for dc in range(5, 16, 5):
 	print(f'Difficulty {dc}') 
 	
-	successes = 0
+	n_successes = 0
+	a_successes = 0
+	d_successes = 0
+	
 	for i in range(trials):
 			n_roll = normal()
-			if n_roll >= dc: successes += 1
-	print(f'Normal {successes / trials}')
-	
-	successes = 0
-	for i in range(trials):
+			if n_roll >= dc: n_successes += 1
 			a_roll = advantage()
-			if a_roll >= dc: successes += 1
-	print(f'Advantage {successes / trials}')
-	
-	successes = 0
-	for i in range(trials):
+			if a_roll >= dc: a_successes += 1
 			d_roll = disadvantage()
-			if d_roll >= dc: successes += 1
-	print(f'Disadvantage {successes / trials}')
+			if d_roll >= dc: d_successes += 1
+	print(f'Normal {n_successes / trials}')		
+	print(f'Advantage {a_successes / trials}')	
+	print(f'Disadvantage {d_successes / trials}')
