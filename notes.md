@@ -26,10 +26,16 @@ while < condition is True/False >
 	
 # Style Checker
 python3 ~/Code/MCB185/stylint.py <yourfile.py>
+
+# Printing Codes
+\n = vertical spacing 
+\t = tab, lines up text
+
+# Compound Assignment Variables
++= means increments (ex: a +=1, a increasing in increments of 1)
+-= means decrement (ex: a -= 1, a decreasing by increments of 1)
+*= means multiply and assign 
 	
 # Questions
-- complex numbers in python? how? # don't need to account for them, we don't use em ever
-- what output wanted for hydropathy non aa values? zero?, do we want calculations for 
-	non aa values?
-- for matrix questions, how to get output to take 4x4 format,
-	returning in lines but want 4 rows 
+
+	
