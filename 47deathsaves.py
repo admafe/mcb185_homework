@@ -10,7 +10,7 @@ revives = 0
 for i in range(rolls):
 	failures = 0
 	successes = 0
-	for j in range (3):
+	for j in range(3):
 		d1 = random.randint(1, 20)
 		if 1 < d1 < 10:   failures += 1
 		if 20 > d1 >= 10: successes += 1

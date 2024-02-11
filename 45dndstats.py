@@ -6,7 +6,7 @@ rolls = 10000
 
 # 3D6
 total = 0
-for i in range (rolls):
+for i in range(rolls):
 	d1 = random.randint(1, 6)
 	d2 = random.randint(1, 6)
 	d3 = random.randint(1, 6)
@@ -17,7 +17,7 @@ print(total / rolls)
 
 # 3D6r1
 total = 0
-for i in range (rolls):
+for i in range(rolls):
 	d1 = random.randint(1, 6)
 	if d1 == 1: d1 = random.randint(1, 6)
 	d2 = random.randint(1, 6)
@@ -32,11 +32,11 @@ print(total / rolls)
 
 # 3D6x2
 total = 0
-for i in range (rolls):
+for i in range(rolls):
 	score = 0 
 	for j in range(3):
-		d1 = random.randint(1,6)
-		d2 = random.randint(1,6)
+		d1 = random.randint(1, 6)
+		d2 = random.randint(1, 6)
 		if d1 < d2: keep = d2
 		else:       keep = d1
 		score += keep
