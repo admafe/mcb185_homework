@@ -29,6 +29,7 @@ for i in range(rolls):
 #print(d1, d2, d3)
 #print(score)
 print(total / rolls)
+#Better way: use a nested loop to do it 3 times over instead of coding 3 times
 
 # 3D6x2
 total = 0

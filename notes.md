@@ -36,6 +36,11 @@ python3 ~/Code/MCB185/stylint.py <yourfile.py>
 -= means decrement (ex: a -= 1, a decreasing by increments of 1)
 *= means multiply and assign 
 	
+# Markdown 
++ Use spaces not tabs in markdown 
+
 # Questions
+
+
 
 	
