@@ -9,8 +9,15 @@ print(seq[-1]) #does it backwards
 #Tuples
 '''
 tax = ('Homo', 'sapiens', 9606) 
-print(tax)
+print(tax[0]) #index
+print(tax[::-1])#slice
 '''
+#Slices
+
+s = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+#print(s[::-1]) #-1 prints the string backwards
+
 # tuples made with parenthesis
 
 #tax[0] = '1'
@@ -58,7 +65,86 @@ for nt, name in zip(nts, names): #zip allows enumeration without items being sam
 
 #Lists: allows you to change items in list 
 
+'''
 nts =['A', 'T', 'C']
 print(nts)
 nts[2] = 'G'
 print(nts)
+
+nts.append('C')
+print(nts)
+
+last = nts.pop()
+print(last)
+
+nts.sort()
+print(nts)
+nts.sort(reverse =True)
+print(nts)
+
+nucleotides = nts
+nucleotides.append('C')
+nucleotides.sort()
+print(nts, nucleotides)
+'''
+
+#Creating empty lists, then adding things to them
+'''
+items = list()
+print(items)
+items.append('eggs')
+
+stuff = []
+stuff.append(3)
+print(stuff)
+print(items)
+'''
+'''
+alph = 'ACDEFGHIKLMPQRSVW'
+print(alph)
+aas = list(alph)
+print(aas)
+
+text = 'good day    to you'
+words = text.split()
+
+line = '1.42,2.72,3.14'
+print(line.split(',')) #use for tsv or csv data
+
+s = '-'.join(aas)
+print(s)
+s = ''.join(aas)
+print(s)
+print(words)
+
+#using 'in' for item in container
+if 'A' in alph: print('yay')
+if 'a' in alph: print('no')
+
+#indexing a container
+print('index G?', alph.index('G'))
+#print('index Z?', alph.index('Z')) #shows an error, there is no Z in alph
+
+#finding something in container
+print('find G?', alph.find('G')) # returns value of item in list that matches
+print('find Z?', alph.find('Z')) #returns -1 since Z not found
+'''
+#Practice
+'''
+import sys
+
+values = []
+
+#def min():
+for x in sys.argv[1:]:
+	values.sort(int(x))
+print(values)
+'''
+vals =[1, 4, 5, 7, 2, 9]
+
+def minimum(vals):
+	mini = vals[0]
+	for val in vals[1:]:
+		if val < mini: mini = val
+	return mini
+	

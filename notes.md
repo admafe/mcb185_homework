@@ -1,17 +1,17 @@
 MCB 185 Notes
 ====================
 
-generally alphabetize. example: alphabetize nucleotides
++ generally alphabetize. example: alphabetize nucleotides
 
-nucleotides should be lowercase, generally all variable lowercase
-amino acids can be uppercase letters
++ nucleotides should be lowercase, generally all variable lowercase
++ amino acids can be uppercase letters
 
-use ifs when events are independent 
-use elifs when events are reliant on prior if statements
++ use ifs when events are independent 
++ use elifs when events are reliant on prior if statements
 
-Write problems/ issues out first, then do the work
-Weed out problems/ potential errors (like when you want positives or things)
-then you can solve 
++ Write problems/ issues out first, then do the work
++ Weed out problems/ potential errors (like when you want positives or things)
+  then you can solve 
 
 **test functions with small check-able values, then expand range once it works**
 
@@ -39,7 +39,20 @@ python3 ~/Code/MCB185/stylint.py <yourfile.py>
 # Markdown 
 + Use spaces not tabs in markdown 
 
-# Questions
+# Modifying Lists
++ <list>.append()
+  allows you to add elements to end of a list 
++ <list>.pop()
+  removes things from the end of a list
++ <list>.sort
+  sorts the list 
+  *invert sort by using (reverse = True)*
++ <list>.split()
+  splits lists into strings
++ '<delimiter>'.join(<list>)
+   turns list into string by joining list items by whatever delimiter 
+   (ex: '' joins by nothing, ',' would join by commas)
+
 
 
 

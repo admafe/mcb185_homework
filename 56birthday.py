@@ -1,3 +1,4 @@
+'''
 finding duplicates within a set of data
 in diff group sizes
 you're collecting the birthdays 
@@ -13,3 +14,4 @@ compare everything to everything else w/out comparing to self
 	
 3: Sort into bins by month...? , when a certain month goes up in count of 1, stop
 (Basically create a calendar) #57
+'''
