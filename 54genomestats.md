@@ -1,6 +1,6 @@
 54genomestats.md
 ================
-# by Adele Ferrer
+## by Adele Ferrer
 
 | Genome         | Type | Count | Min  |  Max  |  Mean  |  St Dev  |   Med  |
 |:---------------|------|-------|------|-------|--------|----------|-------:|
