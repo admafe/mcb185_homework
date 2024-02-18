@@ -1,4 +1,6 @@
-#finding min in kist of values 
+# 55colorname.py by Adele Ferrer
+
+#finding min in list of values 
 
 '''
 read in file
@@ -8,7 +10,7 @@ then sort the min
 
 import sys
 
-hexcode = sys.argv[1]
+colorfile = sys.argv[1]
 R = int(sys.argv[2])
 G = int(sys.argv[3])
 B = int(sys.argv[4])
