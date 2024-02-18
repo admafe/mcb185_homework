@@ -8,7 +8,7 @@ then sort the min
 
 import sys
 
-colors = sys.argv[1]
+hexcode = sys.argv[1]
 R = int(sys.argv[2])
 G = int(sys.argv[3])
 B = int(sys.argv[4])

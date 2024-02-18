@@ -29,34 +29,35 @@ with gzip.open(gffpath, 'rt') as fp:
 val.sort() 
 
 #Count
-print(f'Count: {len(val)}')
+n = len(val)
+print(f'Count: {n}')
 
 #Minimum
 print(f'Minimum: {val[0]}')
 
 #Maximum
-print(f'Maximum: {val[len(val) -1]}')
+print(f'Maximum: {val[n -1]}')
 
 #Mean
 total = 0
 for x in val:
 	total += x
-mean = total /len(val)
+mean = total / n
 print(f'Mean: {mean}')
 
 #Standard Deviation
 num = 0
 for x in val:
 	num += (x-mean)**2
-variance = num / len(val)
+variance = num / n
 st_dev = variance**0.5
 print(f'St Dev: {st_dev}')
 
 #Median
-if len(val) % 2 == 0: #then checking if list length is odd or even
-	med = (val[len(val)//2] + val[(len(val)//2) - 1]) /2  #need to take average of 2 mid values 
+if n % 2 == 0: #then checking if list length is odd or even
+	med = (val[n//2] + val[(n//2) - 1]) /2  #need to take average of 2 mid values 
 else:
-	med = val[len(val)//2]
+	med = val[n//2]
 print(f'Median: {med}')
 
 
