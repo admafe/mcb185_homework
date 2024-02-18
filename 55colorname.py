@@ -30,3 +30,5 @@ with open(colors) as fp:
 			result = color
 print(result)
 #		print(color, abs(R -r )+ abs(G -g) + abs(B - b))
+
+

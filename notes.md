@@ -12,6 +12,9 @@ MCB 185 Notes
 + Write problems/ issues out first, then do the work
 + Weed out problems/ potential errors (like when you want positives or things)
   then you can solve 
+  
++ expand everything out, variable for everything
+  makes it easier to debug things
 
 **test functions with small check-able values, then expand range once it works**
 
@@ -52,6 +55,23 @@ python3 ~/Code/MCB185/stylint.py <yourfile.py>
 + '<delimiter>'.join(<list>)
    turns list into string by joining list items by whatever delimiter 
    (ex: '' joins by nothing, ',' would join by commas)
+
+# Opening Files
+```
+with open(path) as fp:
+    for line in fp:
+        do_something_with(line)
+```
+for a zipped file
+```
+import gzip
+with gzip.open(path, 'rt') as fp:
+    for line in fp:
+        print(line, end='')
+```
+#puts terminal values from terminal into list
+for x in sys.argv[1:]:  
+	val.append(int(x))
 
 
 

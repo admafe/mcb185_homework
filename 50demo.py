@@ -140,6 +140,7 @@ for x in sys.argv[1:]:
 	values.sort(int(x))
 print(values)
 '''
+'''
 vals =[1, 4, 5, 7, 2, 9]
 
 def minimum(vals):
@@ -148,3 +149,6 @@ def minimum(vals):
 		if val < mini: mini = val
 	return mini
 	
+print(minimum(vals))
+'''
+
