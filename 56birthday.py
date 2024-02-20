@@ -1,4 +1,5 @@
 # 56birthday.py by Adele Ferrer
+# Co-author: Marle Lamountry 
 '''
 finding duplicates within a set of data
 in diff group sizes
@@ -20,20 +21,27 @@ compare everything to everything else w/out comparing to self
 import random
 import sys
 
-#trials = int(sys.argv[1])
-#days = int(sys.argv[2])
-people = int(sys.argv[1])
+trials = int(sys.argv[1])
+people = int(sys.argv[2])
 
-birthdays = []
-for i in range(people):
-	month = random.randint(1,12)
-	if month == 4 or month == 6 or month == 9 or month == 11:
-		day = random.randint(1,30)
-	elif month == 2:
-		day = random.randint(1,28)
-	else: 
-		day = random.randint(1,31)
-	birthday = f'{month}/{day}'
-	birthdays.append(birthday)
-	
+duplicates = 0
+for i in range(trials):
+	birthdays = []
+	for j in range(people):
+		month = random.randint(1,12)
+		if month == 4 or month == 6 or month == 9 or month == 11:
+			day = random.randint(1,30)
+		elif month == 2:
+			day = random.randint(1,28)
+		else: 
+			day = random.randint(1,31)
+		birthday = f'{month}/{day}'
+		
+		if birthday in birthdays: 
+			duplicates += 1
+			break
+		else:
+			birthdays.append(birthday)
+
 #print(birthdays)
+print(duplicates/trials)

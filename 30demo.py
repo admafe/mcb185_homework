@@ -46,7 +46,7 @@ for nt1 in nts:
 # full scoring matrix
 '''
 
-'''		
+'''	
 limit = 4
 for i in range(0, limit):
 	for j in range(i +1, limit):
