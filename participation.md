@@ -16,9 +16,8 @@ Participation
 
 | Week | AC | VP | AQ | OC | SH | SA | CA | OA | Tot | Notes
 |:----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:---:|:--------
-|  Ex  |  2 |    |  1 |  2 |    |  1 |  1 |  2 |  9  | 1, 2
 |   5  |  4 |    |    |  2 |    |  1 |  1 |    | 8   | 
-|   6  |  4 |    |  1 |  2 |    |    |    |    |     |
+|   6  |  4 |    |  1 |  2 |    |    |    |  1 |     | 1
 |   7  | 
 |   8  | 
 |   9  |
@@ -26,7 +25,6 @@ Participation
 Notes:
 
 Examples:
-1. I helped another student fix their github account
-2. I stayed after class and got help from the professor
+1. I helped a student in class
 
 
