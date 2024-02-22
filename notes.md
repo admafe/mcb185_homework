@@ -32,7 +32,7 @@ while < condition is True/False >
 	output/ function here
 	
 # Style Checker
-python3 ~/Code/MCB185/stylint.py <yourfile.py>
+**python3 ~/Code/MCB185/src/stylint.py <yourfile.py>**
 
 # Printing Codes
 \n = vertical spacing 

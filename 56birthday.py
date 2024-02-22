@@ -13,10 +13,12 @@ compare everything to everything else w/out comparing to self
 1: Get all the birthdays
 	a: half matrix it 
 	b: sort; then look for duplicates
-2: Check as you go/ as list builds (same as half mat but simultaneous) **Faster**
+2: Check as you go/ as list builds (same as half mat but simultaneous)
+	**Faster method**
 	
-3: Sort into bins by month...? , when a certain month goes up in count of 1, stop
-(Basically create a calendar) #57
+3: Sort into bins by day...?
+	when a certain day goes up in count of 1, stop
+	(Basically create a calendar) #57
 '''
 import random
 import sys
@@ -29,7 +31,7 @@ duplicates = 0
 for i in range(trials):
 	birthdays = []
 	for j in range(people):
-		birthday = random.randint (1, days)
+		birthday = random.randint(1, days)
 		if birthday in birthdays: 
 			duplicates += 1
 			break
