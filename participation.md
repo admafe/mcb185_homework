@@ -14,17 +14,19 @@ Participation
 
 ## Log ##
 
-| U | AC | VP | AQ | OC | SH | SA | CA | OA | Tot | Notes
-|:-:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:---:|:--------
-| Ex|  2 |    |  1 |  2 |    |  1 |  1 |  2 |  9  | 1, 2
-| 5 |  4 |    |    |  2 |    |  1 |  1 |    |  8  |   
-| 6 |
-| 7 | 
-| 8 | 
-| 9 |
+| Week | AC | VP | AQ | OC | SH | SA | CA | OA | Tot | Notes
+|:----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:---:|:--------
+|  Ex  |  2 |    |  1 |  2 |    |  1 |  1 |  2 |  9  | 1, 2
+|   5  |  4 |    |    |  2 |    |  1 |  1 |    | 8   | 
+|   6  |  4 |    |  1 |  2 |    |    |    |    |     |
+|   7  | 
+|   8  | 
+|   9  |
 
 Notes:
 
 Examples:
 1. I helped another student fix their github account
 2. I stayed after class and got help from the professor
+
+

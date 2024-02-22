@@ -15,6 +15,10 @@ MCB 185 Notes
   
 + expand everything out, variable for everything
   makes it easier to debug things
+  
+# Keyboard Shortcuts
++ Ctrl + A: puts you at beginning of line
++ Ctrl + X: Cuts
 
 **test functions with small check-able values, then expand range once it works**
 

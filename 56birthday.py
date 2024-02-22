@@ -22,12 +22,25 @@ import random
 import sys
 
 trials = int(sys.argv[1])
-people = int(sys.argv[2])
+days = int(sys.argv[2])
+people = int(sys.argv[3])
 
 duplicates = 0
 for i in range(trials):
 	birthdays = []
 	for j in range(people):
+		birthday = random.randint (1, days)
+		if birthday in birthdays: 
+			duplicates += 1
+			break
+		else:
+			birthdays.append(birthday)
+			
+print(birthdays)
+print(duplicates/trials)
+
+'''
+# Don't need to actually create birthdays!!!!!!
 		month = random.randint(1,12)
 		if month == 4 or month == 6 or month == 9 or month == 11:
 			day = random.randint(1,30)
@@ -36,12 +49,6 @@ for i in range(trials):
 		else: 
 			day = random.randint(1,31)
 		birthday = f'{month}/{day}'
+'''
 		
-		if birthday in birthdays: 
-			duplicates += 1
-			break
-		else:
-			birthdays.append(birthday)
 
-#print(birthdays)
-print(duplicates/trials)
