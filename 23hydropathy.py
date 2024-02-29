@@ -22,7 +22,7 @@ def hydrophobicity(aa):
 	elif aa == 'V': return +4.2
 	elif aa == 'W': return -0.9
 	elif aa == 'Y': return -1.3
-	else: return 'Not an Amino Acid' 
+	else:           return 0.0
 	# fix this, needs to be a number so we can do math?
 	
 print(hydrophobicity('T'))
