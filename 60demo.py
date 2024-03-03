@@ -84,5 +84,7 @@ for frame in range(3):
 				if codon == 'TAA' or codon == 'TAG' or codon == 'TGA':
 					print('gene', i+1, j+3)
 					stop = j
-					i = j
+					i = stop
 		i +=3
+		
+		#len(ant)
