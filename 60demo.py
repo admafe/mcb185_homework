@@ -9,15 +9,15 @@ cd ~/Code/mcb_homework
 #alias in command line
 ln - s ../MCB185/src/mcb185.py .
 '''
-'''
+#'''
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	defwords = defline.split()
 	name = defwords[0]
 	gc = 0 
 	for nt in seq:
 		if nt == 'C' or nt == 'G': gc +=1
-#	print(name, gc/len(seq))
-'''
+	print(name, gc/len(seq))
+#'''
 '''	
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	pro = []
@@ -68,6 +68,7 @@ for i in range(len(seq) - w):
 '''
 
 #I think this is problem 64
+'''
 seq = 'AGTCGTCATTTGGGGGTCATACATGGGGAGATACGT'
 
 for frame in range(3):
@@ -88,3 +89,4 @@ for frame in range(3):
 		i +=3
 		
 		#len(ant)
+'''

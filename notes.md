@@ -77,6 +77,13 @@ with gzip.open(path, 'rt') as fp:
 for x in sys.argv[1:]:  
 	val.append(int(x))
 
+# Sliding Window Algorithm
+```{python}
+w = 10 #sets the size of window
+s = 1 #sets step size
+for i range(0, len(seq) - w +1, s): #moves window along
+	subseq = seq[i: i + w]
+```
 
 
 
