@@ -4,13 +4,12 @@ import sys
 import mcb185
 
 #Command Line: python3 62skewer.py ecoli.fa.gz 1000 
+
 w = int(sys.argv[2])
 
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	g = seq[0:w].count('G')
 	c = seq[0:w].count('C')
-	
-#seq = sys.argv[1]
 
 for i in range(len(seq) - w):
 	off = seq[i]
@@ -26,4 +25,4 @@ for i in range(len(seq) - w):
 	if (g+c) > 0: skew = (g-c)/(g+c)
 	else:         skew = 0 
 	
-#	print(i,comp, skew)
+#	print(f'{i}\t{comp:.3f}\t{skew:.3f}')
