@@ -23,7 +23,6 @@ def hydrophobicity(aa):
 	elif aa == 'W': return -0.9
 	elif aa == 'Y': return -1.3
 	else:           return 0.0
-	# fix this, needs to be a number so we can do math?
 	
 print(hydrophobicity('T'))
 print(hydrophobicity('B'))

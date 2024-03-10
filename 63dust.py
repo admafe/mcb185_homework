@@ -22,23 +22,18 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
 w = int(sys.argv[2])
 h = float(sys.argv[3])
 
-for i in range(len(sequence) - w):
-	off = sequence[i]
-	on = sequence[i+w] 
-	
+for i in range(len(sequence) - w +1):
+	window = sequence[i : i+w]
+	for n in window: 
+		a = sequence[0:w].count('A')
+		c = sequence[0:w].count('C')
+		g = sequence[0:w].count('G')
+		t = sequence[0:w].count('T')
+		if dogma.entropy(a, c, g, t) < h:
+			for n in window:
+				window[n] = 'N'
 
-'''
-for i in range(len(sequence)):
-#	newlist = seq(window)	
-	a = sequence[0:w].count('A')
-	c = sequence[0:w].count('C')
-	g = sequence[0:w].count('G')
-	t = sequence[0:w].count('T')
-	if dogma.entropy(a, c, g, t) > h:
-	
+masked_seq = ''.join(window)
+print(masked_seq)
 
-	
-		for i in range window:
-		sequence.append('N')
 
-print(sequence)
