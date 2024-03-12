@@ -25,4 +25,4 @@ for i in range(len(seq) - w):
 	if (g+c) > 0: skew = (g-c)/(g+c)
 	else:         skew = 0 
 	
-#	print(f'{i}\t{comp:.3f}\t{skew:.3f}')
+	print(f'{i}\t{comp:.3f}\t{skew:.3f}')

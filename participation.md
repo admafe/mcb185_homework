@@ -17,14 +17,12 @@ Participation
 | Unit | AC | VP | AQ | OC | SH | SA | CA | OA | Tot | Notes
 |:----:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:---:|:--------
 |   5  |  6 |    |  1 |  4 |    |  1 |  1 |  1 |  14 | 1
-|   6  | 10 |    |    |    |    |    |  2 |    |     | 
+|   6  | 12 |    |    |  4 |    |    |  2 |    |     | 
 |   7  | 
 |   8  | 
 |   9  |
 
 Notes:
-
-Examples:
 1. I helped a student in class
 
 

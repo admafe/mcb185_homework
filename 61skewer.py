@@ -21,6 +21,6 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
 		s = seq[i: i+w]
 		dogma.gc_comp(s)
 		dogma.gc_skew(s)
-#		print(f'{i}\t{dogma.gc_comp(s):.3f}\t{dogma.gc_skew(s):.3f}')
+		print(f'{i}\t{dogma.gc_comp(s):.3f}\t{dogma.gc_skew(s):.3f}')
 
 		

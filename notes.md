@@ -85,6 +85,25 @@ for i range(0, len(seq) - w +1, s): #moves window along
 	subseq = seq[i: i + w]
 ```
 
+#Permissions
++ read (4)
++ write (2)
++ execute (1)
+**Many different ways to assign this**
+
+0
+1
+2
+3
+4: R
+5: RX
+6: RW (ReadMe, Python)
+7: RWX
+
+Ex: 644 = author can read and write, everyone else can only read (user/group/public)
+
+<chmod> allows you to change permissions 
+
 
 
 	

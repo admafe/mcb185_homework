@@ -1,6 +1,12 @@
 # 64profinder.py by Adele Ferrer
 
-seq = 'AGTCGTCATTTGGGGGTCATACATGGGGAGATACGT'
+import mcb185
+import sys
+
+
+
+	
+'''
 
 for frame in range(3):
 	print(frame)
@@ -20,3 +26,4 @@ for frame in range(3):
 		i +=3
 		
 		#len(ant)
+'''
