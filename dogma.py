@@ -16,9 +16,41 @@ def translate(dna):
 	aas = []	
 	for i in range(0, len(dna), 3):
 		codon = dna[i: i + 3]
-		if   codon == 'ATG': aas.append('M')
-		elif codon == 'TAA': aas.append('*')
-		else:                aas.append('X')
+		if   codon == 'ATG':                   aas.append('M')
+		elif codon == 'TAA' or codon == 'TAG'
+		  or codon == 'TGA':                   aas.append('*')
+		elif codon == 'TTT' or codon == 'TTC': aas.append('F')
+		elif codon == 'TTA' or codon == 'TTG'
+		  or codon == 'CTT' or codon == 'CTC'
+		  or codon == 'CTA' or codon == 'CTG': aas.append('L')
+		elif codon == 'TCT' or codon == 'TCC'
+		  or codon == 'TCA' or codon == 'TCG'
+		  or codon == 'AGT' or codon == 'AGC': aas.append('S')
+		elif codon == 'TAT' or codon == 'TAC': aas.append('Y')
+		elif codon == 'TGT' or codon == 'TGC': aas.append('C')
+		elif codon == 'TGG':                   aas.append('W')
+		elif codon == 'CCT' or codon == 'CCC'
+		  or codon == 'CCA' or codon == 'CCG': aas.append('P')
+		elif codon == 'CAT' or codon == 'CAC': aas.append('H')
+		elif codon == 'CAA' or codon == 'CAG': aas.append('Q')
+		elif codon == 'CGT' or codon == 'CGC'
+		  or codon == 'CGA' or codon == 'CGG'
+		  or codon == 'AGA' or codon == 'AGG': aas.append('R')
+		elif codon == 'ATT' or codon == 'ATC'
+		  or codon == 'ATA':                   aas.append('I')
+		elif codon == 'ACT' or codon == 'ACC'
+		  or codon == 'ACA' or codon == 'ACG': aas.append('T')
+		elif codon == 'AAT' or codon == 'AAC': aas.append('N')
+		elif codon == 'AAA' or codon == 'AAG': aas.append('K')
+		elif codon == 'GTT' or codon == 'GTC'
+		  or codon == 'GTA' or codon == 'GTG': aas.append('V')
+		elif codon == 'GCT' or codon == 'GCC'
+		  or codon == 'GCA' or codon == 'GTG': aas.append('A')
+		elif codon == 'GAT' or codon == 'GAC': aas.append('D')
+		elif codon == 'GAA' or codon == 'GAG': aas.append('E')
+		elif codon == 'GGT' or codon == 'GGC':
+		  or codon == 'GGA' or codon == 'GGG': aas.append('G')
+		else:                                  aas.append('X')
 	return ''.join(aas)
 	
 def gc_comp(seq):

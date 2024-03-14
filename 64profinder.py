@@ -3,11 +3,7 @@
 import mcb185
 import sys
 
-
-
-	
 '''
-
 for frame in range(3):
 	print(frame)
 	fseq= seq[frame:]
