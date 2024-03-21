@@ -32,6 +32,6 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]):
 		if dogma.entropy(a, c, g, t) < h:
 			for j in range(i, i+w):
 				sequence[j] = 'N'
-	print(defline, ''.join(sequence))
+	print(f'{defline}\n', ''.join(sequence))
 
 
