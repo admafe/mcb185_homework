@@ -5,6 +5,8 @@ import mcb185
 import sys
 import dogma
 
+signallength
+
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 	protein = list(seq)
 	for i in range(len(protein)):
