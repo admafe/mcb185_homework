@@ -5,26 +5,29 @@ import mcb185
 import sys
 import dogma
 
-min_length = sys.argv[2]
+min_length = int(sys.argv[2])
 
 def sixframe_trans(seq):
 		translations = []
-		anti_seq = dogma.revcomp(seq)
 		for frame in range(3):
-			forward_trans = dogma.translate(seq[frame:]).split('*')
-			reverse_trans = dogma.translate(anti_seq[frame:]).split('*')
-			for aa in translations:
+			aa_seq = dogma.translate(seq[frame:]).split('*')
+			for aa in aa_seq:
 				if 'M' in aa:
-				protein = aa[aa.find('M'):]
-				if len(prot) >= min_length:
-					translations.append(forward_trans)
-					translations.append(reverse_trans)
+					protein = aa[aa.find('M'):]
+					if len(protein) >= min_length:
+						translations.append(protein)
 		return translations
 
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
-		for aa in translations:
-			if aa == 'M': break
-	print(translations)
+	forward = sixframe_trans(seq)
+	reverse = sixframe_trans(dogma.revcomp(seq))
+	for protein in reverse:
+		forward.append(protein)
+	for i, protein in enumerate(forward):
+		print(f'>{defline[:11]}-prot-{i}\n{protein}*')
+		
+
+	
 	
 #	aa_seq = dogma.translate(seq)
 #	for i in range(0, len(aa_seq) - frame + 1, 1):

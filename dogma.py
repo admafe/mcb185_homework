@@ -108,25 +108,53 @@ def entropy(a, c, g, t):
 	if t > 0: h = h + pt * math.log2(pt)
 	return -h
 	
-def hydrophobicity(aa):
-	if   aa == 'A': return +1.8
-	elif aa == 'C': return +2.5
-	elif aa == 'D': return -3.5
-	elif aa == 'E': return -3.5
-	elif aa == 'F': return +2.8
-	elif aa == 'G': return -0.4
-	elif aa == 'H': return -3.2
-	elif aa == 'I': return +4.5
-	elif aa == 'K': return -3.9
-	elif aa == 'L': return +3.8
-	elif aa == 'M': return +1.9
-	elif aa == 'N': return -3.5
-	elif aa == 'P': return -1.6
-	elif aa == 'Q': return -3.5
-	elif aa == 'R': return -4.5
-	elif aa == 'S': return -0.8
-	elif aa == 'T': return -0.7
-	elif aa == 'V': return +4.2
-	elif aa == 'W': return -0.9
-	elif aa == 'Y': return -1.3
-	else:           return 0.0
+def hydrophobicity(seq):
+	value = 0
+	for aa in seq
+	if   aa == 'A': value += +1.8
+	elif aa == 'C': value += +2.5
+	elif aa == 'D': value += -3.5
+	elif aa == 'E': value += -3.5
+	elif aa == 'F': value += +2.8
+	elif aa == 'G': value += -0.4
+	elif aa == 'H': value += -3.2
+	elif aa == 'I': value += +4.5
+	elif aa == 'K': value += -3.9
+	elif aa == 'L': value += +3.8
+	elif aa == 'M': value += +1.9
+	elif aa == 'N': value += -3.5
+	elif aa == 'P': value += -1.6
+	elif aa == 'Q': value += -3.5
+	elif aa == 'R': value += -4.5
+	elif aa == 'S': value += -0.8
+	elif aa == 'T': value += -0.7
+	elif aa == 'V': value += +4.2
+	elif aa == 'W': value += -0.9
+	elif aa == 'Y': value += -1.3
+	else:           value += 0.0
+
+def avg_hydrophobicity(seq):
+	value = 0
+	for aa in seq
+		if   aa == 'A': value += +1.8
+		elif aa == 'C': value += +2.5
+		elif aa == 'D': value += -3.5
+		elif aa == 'E': value += -3.5
+		elif aa == 'F': value += +2.8
+		elif aa == 'G': value += -0.4
+		elif aa == 'H': value += -3.2
+		elif aa == 'I': value += +4.5
+		elif aa == 'K': value += -3.9
+		elif aa == 'L': value += +3.8
+		elif aa == 'M': value += +1.9
+		elif aa == 'N': value += -3.5
+		elif aa == 'P': value += -1.6
+		elif aa == 'Q': value += -3.5
+		elif aa == 'R': value += -4.5
+		elif aa == 'S': value += -0.8
+		elif aa == 'T': value += -0.7
+		elif aa == 'V': value += +4.2
+		elif aa == 'W': value += -0.9
+		elif aa == 'Y': value += -1.3
+		else:           value += 0.0
+	return value/len(seq)
